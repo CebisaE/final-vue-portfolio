@@ -3,20 +3,25 @@
     <h1 class="testihead">Below Are My Projects</h1>
 <div  class="project-container">
 <div v-for="project of projects" :key="project.id" class="projects">    
-<div class="card" style="width: 18rem;">
-    <img :src="project.img_url" class="card-img-top" alt="...">
-<div class="card-body">
-    <h2>{{project.title}}</h2>
-</div>
-<ul class="list-group list-group-flush">
-    <li class="list-group-item">{{project.html}}</li>
-    <li class="list-group-item">{{project.css}}</li>
-    <li class="list-group-item">{{project.javascript}}</li>
-</ul>
-<div class="card-body">
-    <a :href='project.github' class="card-link" target="_blank">github</a>
-    <a :href='project.netlify' class="card-link" target="_blank">netlify</a>
-</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img :src="project.img_url" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{project.title}}</h5>
+        <p>{{project.details}}</p>
+        <ul style="list-style: none">
+        <li>{{project.html}}</li>
+        <li>{{project.css}}</li>
+        <li>{{project.javascript}}</li>
+        </ul>
+        <a :href='project.github' class="card-link" target="_blank">github</a>
+        <a :href='project.netlify' class="card-link" target="_blank">netlify</a>
+      </div>
+    </div>
+  </div>
 </div>
     </div>
 </div>
@@ -47,6 +52,11 @@ mounted(){
 </script>
 
 <style scoped>
+.img-fluid{
+height: 250px;
+object-fit: cover;
+width: 300px;
+}
 .project-container {
     padding: 161px;
     margin: 117px;
@@ -68,6 +78,6 @@ mounted(){
 .testihead{
     font-weight: 700;
     color: white;
-    font-size: 2rem;
+    font-size: 7rem;
 }
 </style>

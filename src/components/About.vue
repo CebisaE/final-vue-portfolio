@@ -1,177 +1,179 @@
 <template>
-<section class="about" style="padding:15px">
-<div class="row-1">
-<div class="image">
-<img src="https://i.postimg.cc/DyfB3MMF/Emihle2-min.jpg" alt="">
-</div>
-<div class="content">
-<h3>Hi my name is Emihle ,an aspiring developer that's ready to 
-      learn new things to improve her skill</h3>
-<p>My love for coding began a long time ago,
-      just that I didn't have the opportunity to do coding
-      A family friend introduced me to coding,
-      when he told me to try out Lifechoices since he knew that
-      I am interested in technology.</p>
-<div class="box-container">
-    <div class="box">
-        <p> <span> gender : </span> Female </p>
-        <p> <span> language : </span> english </p>
-        <p> <span> work : </span> fullstack developer </p>
-    </div>
-    <div class="box">
-        <p> <span>freelance : </span> available </p>
-        <p> <span> phone : </span> 074 737 7043 </p>
-        <p> <span> country : </span> South Africa </p>
-    </div>
-</div>
-    <h3 class="skills">Skills
-    </h3><br>
-<MDBRow class="Skill" style="max-width: 740px">
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/3JQc9HfW/4691516-html5-icon.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/RhvPmB2d/8546808-bootstrap-icon.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/JhBYcKbN/7422531-css3-css-file-development-icon.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/nhRT8824/8674900-ic-fluent-javascript-regular-icon.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/053x9XVv/4691303-mysql-icon.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
+  <section id="about" class="about">
+      <div class="container">
 
-          <div class="w-100 d-none d-md-block"></div>
+        <div class="section-title">
+          <h2>About</h2>
+          <p>A little bit information about me</p>
+        </div>
 
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/rpd3ZqLt/4691448-dot-js-vue-icon.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-          <MDBCol col="6" sm="4"
-            ><img
-              src=" https://i.postimg.cc/Bnjm4N7r/8546865-git-alt-icon.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/X7GnB51d/Screenshot-from-2022-01-28-10-56-10-removebg-preview.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/G2g1H3kX/Screenshot-from-2022-01-28-10-58-18-removebg-preview.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-          <MDBCol col="6" sm="4"
-            ><img
-              src="https://i.postimg.cc/d109dkPX/Screenshot-from-2022-01-28-11-03-23-removebg-preview.png"
-              alt=""
-              class="img-fluid rounded"
-          /></MDBCol>
-        </MDBRow>
-</div>
-</div>
-</section>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="https://i.postimg.cc/DyfB3MMF/Emihle2-min.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>UI/UX Designer &amp; Web Developer.</h3>
+            <p class="fst-italic">
+            I am a hard-working, Ambivert who loves meeting new people
+            and getting to know them.
+            furthermore, I assist where I can, as I love helping others.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>02 April 2002</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+27 74 737 7043</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Cape Town,SA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>mihlekcebisa@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              My love for coding began a long time ago,
+              just that I didn't have the opportunity to do coding
+              A family friend introduced me to coding,
+              when he told me to try out Lifechoices since he knew that
+              I am interested in technology.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+<section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>A small evaluation of the skills I learnt in Lifechoices </p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Vue <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Mysql <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Bootstrap <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 </template>
 
 <script>
 export default {
   name: 'About',
-  components: {
 
-  }
 }
 </script>
 
 <style scoped>
-
-.about .row-1{
-display: flex;
-flex-wrap: wrap;
-gap:1.5rem;
-padding-bottom: 2rem;
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
 }
-.about .row-1 .image{
-flex:1 1 25rem;
+.about .content ul {
+  list-style: none;
+  padding: 0;
 }
-.about .row-1 .image img{
-height: 100%;
-width:100%;
-object-fit: cover;
-border:1rem solid #fff;
-border-radius: .5rem;
-box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
-.about .row-1 .content{
-flex:1 1 50rem;
-}
-
-.about .row-1 .content h3{
-color:#ea4343 ;
-font-family: sans-serif;
-    font-size: 2.3rem;
-    font-weight: 700;
-}
-.about .row-1 .content p{
-color:#fff;
-font-size: 1.9rem;
-padding:.5rem 0;
-}
-.about .row-1 .content .box-container{
-display: flex;
-flex-wrap: wrap;
-gap:1.5rem;
-padding: 5rem 0;
-}
-.about .row-1 .content .box-container .box{
-flex:1 1 20rem;
-}
-.about .row-1 .content .box-container .box span{
-color:var(--main-color); 
-}
-.skill{
+.about .content ul li {
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 40px;
-  
+  align-items: center;
 }
-.skills{
-    font-family: sans-serif;
-    font-size: 60px;
-    font-weight: 700;
-    color:#ea4343 ;
-    letter-spacing: -.2px;
-    display: inline-block;
-    margin-bottom: 6px;
+.about .content ul strong {
+  margin-right: 10px;
 }
-.img-fluid {
-  height: 200px;
-  border: 3px solid white;
-  padding: 50px;
-  margin: 1%;
-  border-radius: 10px;
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 0;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+/* skills sections */
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
 }
 </style>

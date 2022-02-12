@@ -1,65 +1,75 @@
 <template>
-<section id="home" class="emihle-section">
-  <div class="container"></div>
-<div class="myTitle">
-    <h2 class="myTitle"><span >Hello, I'm <br> Emihle Cebisa</span><br>
-                  Aspiring
-          <span class="title">Fullstack Developer</span>
-    </h2>
-
-  </div>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height:90vh">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="..." style="height:90vh">
-
+ <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Emihle Cebisa</h1>
+      <p>I'm  an aspiring<span class="typed" data-typed-items="front-end developer,back-end developer"></span></p>
     </div>
-    <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1554306274-f23873d9a26c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="..." style="height:90vh">
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" class="d-block w-100" alt="..." style="height:90vh">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
+  </section>
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
   }
 }
 
 </script>
 <style>
-.myTitle {
-  text-align: center;
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("https://i.postimg.cc/DyfB3MMF/Emihle2-min.jpg") top center;
+  background-size: cover;
+}
+#hero:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
   position: absolute;
-  height:100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: red;
-  z-index: 5;
-  pointer-events: none;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
   font-weight: 700;
-  font-size: 5vw;
+  line-height: 56px;
+  color: #fff;
+}
+#hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 </style>

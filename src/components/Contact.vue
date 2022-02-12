@@ -1,10 +1,10 @@
 <template>
-<section id="contact" style="height:100vh">
+<section id="contact">
                 <div class="container">
-                    <div>
-                        <span class="touch">Get In Touch</span>
-                        <h3 class="touches">Connect With Me Below</h3>
-                    </div>
+                    <div class="section-title">
+          <h2>Contact</h2>
+          <p>When you want to get in touch with me</p>
+        </div>
                         <form @submit.prevent="submitform">
                                 <label>Name:</label>
                                 <input id="name" type="text"  required v-model="name" placeholder="your name">
@@ -35,7 +35,7 @@ export default {
     methods: {
     submitform(){
         console.log('this.email,this.name,this.contact,this.message');
-        fetch('http://localhost:5000/contact', {
+        fetch('https://emihle-portfolio-backend.herokuapp.com/contact', {
     method: 'POST',
     body: JSON.stringify({
     name: this.name,
@@ -65,7 +65,6 @@ export default {
 form{
     max-width:420px;
     margin:30px auto;
-    background: white;
     text-align:left; 
     padding: 40px;
     border-radius: 10px;
@@ -89,7 +88,7 @@ input{
     color: #555;
 }
 button{
-    background: #ea4343;
+    background: #173b6c;
     border:0;
     padding: 10px 20px;
     margin-top: 20px;
@@ -103,23 +102,9 @@ button:hover {
 .submit{
     text-align: center;
 }
-
-.touch{
-    font-family: sans-serif;
-    font-size: 70px;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: -.2px;
-    display: inline-block;
-    margin-bottom: 5px;
-}
-.touches{
-    font-family: sans-serif;
-    font-size: 30px;
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 1px;
-    padding: 16px;
+.container{
+    background: #f5f8fd;
+    overflow: hidden;
 }
 
 </style>

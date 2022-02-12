@@ -1,6 +1,9 @@
 <template>
-<section>
-    <h1 class="heading">Below is what my Lectures and Collegues think of me</h1>
+<section id="testimonials" class="testimonials">
+   <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What my collegues and lectures think of me</p>
+        </div>
     <div class="testimonial-container">
 <div v-for="testimonial of testimonials" :key="testimonial.id" class="testimonial">  
       <div class="border">
@@ -52,7 +55,8 @@ mounted(){
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap:30px
+  gap:30px;
+  padding:115px;
 }
 
 .testimonial{
@@ -67,7 +71,7 @@ mounted(){
     font-family: sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    color: black;
     border: 2px solid;
     padding: 20px;
     text-align: center;
@@ -87,7 +91,7 @@ mounted(){
     
 }
 .heading h1 {
-    border-bottom: solid 4px white;
+    border-bottom: solid 4px black;
     margin: -0.512em auto;
     line-height: 1.2;
 }
@@ -97,11 +101,6 @@ mounted(){
 }
 .border h6{
     font-size: 1.5rem;
-}
-.heading{
-  font-weight: 700;
-  font-size: 3rem;
-    color:#ea4343
 }
 .email h6{
   font-size: 1rem;
