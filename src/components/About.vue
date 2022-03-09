@@ -9,7 +9,7 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="https://i.postimg.cc/DyfB3MMF/Emihle2-min.jpg" class="img-fluid" alt="">
+            <img src="https://i.postimg.cc/htbQPnYV/rsz-img-20220228-wa0028.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>UI/UX Designer &amp; Web Developer.</h3>
@@ -28,7 +28,7 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>mihlekcebisa@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>mihlekcebisa@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
@@ -112,6 +112,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'About',
 
@@ -119,6 +120,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+    padding:5em;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -139,7 +143,7 @@ export default {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color:  #173b6c;
   line-height: 0;
 }
 .about .content p:last-child {
@@ -165,6 +169,7 @@ export default {
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+  color: #149ddd;
 }
 .skills .progress-bar-wrap {
   background: #dce8f8;

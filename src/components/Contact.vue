@@ -1,5 +1,5 @@
 <template>
-<section id="contact">
+<section id="contact" class="contact section-bg"> 
                 <div class="container">
                     <div class="section-title">
           <h2>Contact</h2>
@@ -19,7 +19,9 @@
                             </div>
                 </form>
                     </div>
+                
 </section>
+
 </template>
 
 <script>
@@ -63,10 +65,10 @@ export default {
 
 <style scoped>
 form{
-    max-width:420px;
-    margin:30px auto;
+    max-width:320px;
+    margin:20px auto;
     text-align:left; 
-    padding: 40px;
+    padding: 10px;
     border-radius: 10px;
 }
 label{
@@ -80,7 +82,7 @@ label{
 }
 input{
     display: block;
-    padding: 10px 6px;
+    padding: 6px 2px;
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -103,8 +105,9 @@ button:hover {
     text-align: center;
 }
 .container{
-    background: #f5f8fd;
+    /* background: #f5f8fd; */
     overflow: hidden;
+    padding:5em;
 }
 
 </style>

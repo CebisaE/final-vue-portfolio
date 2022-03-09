@@ -1,9 +1,10 @@
 <template>
 <header id="header">
+   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="https://i.postimg.cc/DyfB3MMF/Emihle2-min.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="https://i.postimg.cc/htbQPnYV/rsz-img-20220228-wa0028.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="#">Emihle Cebisa</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://github.com/CebisaE/" target="_blank" class="google-plus"><i class="fab fa-github"></i></a>
@@ -28,9 +29,6 @@
 </template>
 
 <script>
-export default {
-
-}
 </script>
 
 <style>
@@ -99,6 +97,7 @@ export default {
     margin-left: 0;
   }
 }
+/* Desktop Navigation */
 .nav-menu {
   padding: 30px 0 0 0;
 }
@@ -161,5 +160,6 @@ export default {
 .mobile-nav-active #header {
   left: 0;
 }
+
 
 </style>
