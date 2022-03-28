@@ -1,113 +1,192 @@
 <template>
-<section id="contact" class="contact section-bg"> 
-                <div class="container">
-                    <div class="section-title">
+   <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
           <h2>Contact</h2>
-          <p>When you want to get in touch with me</p>
         </div>
-                        <form @submit.prevent="submitform">
-                                <label>Name:</label>
-                                <input id="name" type="text"  required v-model="name" placeholder="your name">
-                                <label>Email:</label>
-                                <input id="email" type="email" required v-model="email" placeholder="your email">
-                                <label>Contact:</label>
-                                <input id="phone" type="cell" required v-model="contact" placeholder="your phone">
-                                <label>Message:</label>
-                                <input id="message" type="text" required v-model="message" placeholder="your message">
-                            <div class=submit>
-                                <button>submit</button>
-                            </div>
-                </form>
-                    </div>
-                
-</section>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Cape Town, South Africa</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>mihlekcebisa@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+27 74 737 7043</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="https://formspree.io/f/mayvderw" method="post" role="form" target="_blank" class="email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
 
 </template>
 
 <script>
-export default {
-    data() {
-        return{
-            name: "",
-            email:"",
-            contact:"",
-            message:"",
-        }
-    },
-    methods: {
-    submitform(){
-        console.log('this.email,this.name,this.contact,this.message');
-        fetch('https://emihle-portfolio-backend.herokuapp.com/contact', {
-    method: 'POST',
-    body: JSON.stringify({
-    name: this.name,
-    email: this.email,
-    contact: this.contact,
-    message: this.message,
-}),
-    headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-    },
-})
-    .then((response) => response.json())
-    .then((json) => console.log(json))
-    .catch((e) => console.log(e))
-    },
 
-
-
-    },
-    name: 'Contact',
-    components: {
-    }
-}
 </script>
 
 <style scoped>
-form{
-    max-width:320px;
-    margin:20px auto;
-    text-align:left; 
-    padding: 10px;
-    border-radius: 10px;
+.contact{
+    background-color: #f5f8fd;
 }
-label{
-    color: #aaa;
-    display: inline-block;
-    margin:25px 0 15px;
-    font-size:0.6em;
-    text-transform: uppercase;
-    letter-spacing:1px;
-    font-weight: bold;
-}
-input{
-    display: block;
-    padding: 6px 2px;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    color: #555;
-}
-button{
-    background: #173b6c;
-    border:0;
-    padding: 10px 20px;
-    margin-top: 20px;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-}
-button:hover {
-    opacity: 0.8;
-}
-.submit{
-    text-align: center;
-}
-.container{
-    /* background: #f5f8fd; */
-    overflow: hidden;
-    padding:5em;
-}
+.contact .info {
+  width: 100%;
+ background-color: #f5f8fd;
 
+}
+.contact .info i {
+  font-size: 20px;
+  color: #0563bb;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #0563bb;
+  color: #f5f8fd;;
+}
+.contact .email-form {
+  width: 100%;
+  background:#f5f8fd;;
+}
+.contact .email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact .email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .email-form .error-message br + br {
+  margin-top: 25px;
+}
+.contact .email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.contact .email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.contact .email-form input, .contact .email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+.contact .email-form input {
+  height: 44px;
+}
+.contact .email-form textarea {
+  padding: 10px 12px;
+}
+.contact .email-form button[type=submit] {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.contact .email-form button[type=submit]:hover {
+  background: #0678e3;
+}
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 </style>

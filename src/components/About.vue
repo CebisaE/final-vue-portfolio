@@ -65,7 +65,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
+              <span class="skill">Node <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -97,11 +97,12 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Bootstrap <i class="val">55%</i></span>
+              <span class="skill">Mongodb <i class="val">55%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
+
 
           </div>
 
@@ -115,7 +116,23 @@
 
 export default {
   name: 'About',
-
+methods:{
+  function() {
+  let skilsContent = select('.skills-content')
+  if (skilsContent) {
+    new Waypoint({
+      element: skilsContent,
+      offset: '80%',
+      handler: function(direction) {
+        let progress = select('.progress .progress-bar', true);
+        progress.forEach((el) => {
+          el.style.width = el.getAttribute('aria-valuenow') + '%'
+        });
+      }
+    })
+  }
+  }
+}
 }
 </script>
 

@@ -56,7 +56,7 @@ mounted(){
   flex-wrap: wrap;
   justify-content: center;
   gap:30px;
-  padding:115px;
+  padding:86px;
 }
 
 .testimonial{
