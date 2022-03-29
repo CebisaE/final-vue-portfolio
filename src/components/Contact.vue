@@ -11,19 +11,19 @@
           <div class="col-lg-4">
             <div class="info">
               <div class="address">
-                <i class="bi bi-geo-alt"></i>
+                <i class="fa fa-map-pin" aria-hidden="true"></i>
                 <h4>Location:</h4>
                 <p>Cape Town, South Africa</p>
               </div>
 
               <div class="email">
-                <i class="bi bi-envelope"></i>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
                 <h4>Email:</h4>
                 <p>mihlekcebisa@gmail.com</p>
               </div>
 
               <div class="phone">
-                <i class="bi bi-phone"></i>
+                <i class="fa fa-phone" aria-hidden="true"></i>
                 <h4>Call:</h4>
                 <p>+27 74 737 7043</p>
               </div>
@@ -58,7 +58,7 @@
 
       </div>
     </section><!-- End Contact Section -->
-
+ <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-arrow-up"></i></a>
 </template>
 
 <script>
@@ -189,4 +189,31 @@
     transform: rotate(360deg);
   }
 }
+.back-to-top {
+  position: fixed;
+  /* visibility: hidden;
+  opacity: 0; */
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #149ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #2eafec;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 </style>
