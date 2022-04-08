@@ -1,6 +1,6 @@
 <template>
-<header id="header">
-   <i class="fa fa-list mobile-nav-toggle d-xl-none"></i>
+<header id="header" :class="{navbaropen: opened}" >
+   <i class="fa fa-list mobile-nav-toggle d-xl-none" @click="toggleMenu()"></i>
     <div class="d-flex flex-column">
 
       <div class="profile">
@@ -23,16 +23,6 @@
           <li><a href="#contact" class="nav-link scrollto"><i class="fa fa-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav>
-      <!-- <b-button v-b-toggle.sidebar-variant>Toggle Sidebar</b-button> -->
-    <!-- <b-sidebar id="sidebar-variant" title="Sidebar" bg-variant="dark" text-variant="light" shadow>
-      <div class="px-3 py-2">
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-          in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        </p>
-        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
-      </div>
-    </b-sidebar> -->
     </div>
   </header>
 
@@ -40,10 +30,10 @@
 
 <script>
 export default {
+   props: ['opened', 'toggleMenu'],
   methods:{
     function() {
   "use strict";
-
   /**
    * Easy selector helper function
    */
@@ -55,7 +45,6 @@ export default {
       return document.querySelector(el)
     }
   }
-
   /**
    * Easy event listener function
    */
@@ -69,14 +58,12 @@ export default {
       }
     }
   }
-
   /**
    * Easy on scroll event listener 
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
-
   /**
    * Navbar links active state on scroll
    */
@@ -96,7 +83,6 @@ export default {
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
-
   /**
    * Scrolls to an element with header offset
    */
@@ -107,7 +93,6 @@ export default {
       behavior: 'smooth'
     })
   }
-
   /**
    * Back to top button
    */
@@ -123,34 +108,30 @@ export default {
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
   /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
+    select('navbar').classList.toggle('mobile-nav-active')
     this.classList.toggle('fa-list')
     this.classList.toggle('fa-x')
   })
-
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
-
-      let body = select('body')
-      if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
+      let navbar = select('navbar')
+      if (navbar.classList.contains('mobile-nav-active')) {
+        navbar.classList.remove('mobile-nav-active')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        navbarToggle.classList.toggle('fa-list')
+        navbarToggle.classList.toggle('fa-x')
       }
       scrollto(this.hash)
     }
   }, true)
-
   /**
    * Scroll with ofset on page load with hash links in the url
    */
@@ -164,6 +145,7 @@ export default {
   }
   }
 }
+
 </script>
 
 <style>
@@ -218,16 +200,31 @@ export default {
   color: #fff;
   text-decoration: none;
 }
-
 #main {
   margin-left: 300px;
 }
-
 @media (max-width: 1199px) {
-  #header {
-    left: -300px;
+  .navbaropen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
+  
+  }
+  .viewopen {
+    margin-left: 300px;
   }
 
+  #header {
+    left: -100%;
+  }
   #main {
     margin-left: 0;
   }
@@ -266,7 +263,6 @@ export default {
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
   color: #149ddd;
 }
-
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -288,13 +284,13 @@ export default {
   border-radius: 50px;
   cursor: pointer;
 }
-
 .mobile-nav-active {
   overflow: hidden;
 }
 .mobile-nav-active #header {
   left: 0;
 }
+
 
 
 </style>
