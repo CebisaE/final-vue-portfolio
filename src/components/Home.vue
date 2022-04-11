@@ -28,8 +28,6 @@ export default {
   background-size: cover;
 }
 #hero:before {
-  content: "";
-  background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -52,6 +50,7 @@ align-self: center;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  padding-bottom: 9px;
 }
 
 @media (min-width: 1024px) {
@@ -63,10 +62,12 @@ align-self: center;
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    padding: 5px;
   }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
+    padding: 5px;
   }
 }
 * {
