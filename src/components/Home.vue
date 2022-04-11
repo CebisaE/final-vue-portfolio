@@ -1,5 +1,5 @@
 <template>
- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Emihle Cebisa</h1>
       <h2>
@@ -16,8 +16,6 @@
 <script>
 export default {
   name: "Home",
-  components: {
-  },
   
 } 
 
@@ -38,8 +36,6 @@ export default {
   left: 0;
   right: 0;
   z-index: 1;
-  height: 100vh;
-width: 110em;
 }
 .hero-container{
 align-self: center;
@@ -52,7 +48,6 @@ align-self: center;
   
 }
 #hero h1 {
-  /* margin: 0 0 10px 0; */
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -72,7 +67,6 @@ align-self: center;
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    /* margin-bottom: 30px; */
   }
 }
 * {
@@ -110,7 +104,6 @@ h2 span {
   color: #fff;
   display: block;
   font-weight: 900;
-  /* overflow: hidden; */
   position: absolute;
   padding-left: 1.4rem;
   top: 0.rem;
@@ -186,9 +179,4 @@ h2 span {
     text-indent: 0;
   }
 }
-
-
-
-
-
 </style>

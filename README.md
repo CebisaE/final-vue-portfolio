@@ -1,5 +1,5 @@
 # my-portfolio
-
+my personal portfolio that is built with vue3 ann node as a practise to what we've been thought at lifechoices academy 
 ## Project setup
 ```
 npm install

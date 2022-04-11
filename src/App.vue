@@ -31,7 +31,7 @@ Navbar,
     Contact,
     Footer
   },
-   data(){
+  data(){
     return {
       opened: false
     }
