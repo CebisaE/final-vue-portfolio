@@ -22,7 +22,7 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    Navbar,
+Navbar,
     Home,
     About,
     Resume,
@@ -111,8 +111,6 @@ section {
   section {
     margin-left: 0;
   }
-  
-   
 }
 
 </style>

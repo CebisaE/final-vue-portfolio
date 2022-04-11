@@ -1,8 +1,7 @@
 <template>
-<header id="header" :class="{navbaropen: opened}" >
-   <i class="fa fa-list mobile-nav-toggle d-xl-none" @click="toggleMenu()"></i>
+  <i class="fa fa-list mobile-nav-toggle d-xl-none" @click="toggleMenu()"></i>
+  <header id="header" :class="{navbaropen: opened}" >
     <div class="d-flex flex-column">
-
       <div class="profile">
         <img src="https://i.postimg.cc/htbQPnYV/rsz-img-20220228-wa0028.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="#">Emihle Cebisa</a></h1>
@@ -25,13 +24,12 @@
       </nav>
     </div>
   </header>
-
 </template>
 
 <script>
 export default {
    props: ['opened', 'toggleMenu'],
-  methods:{
+  methods: {
     function() {
   "use strict";
   /**
@@ -204,26 +202,25 @@ export default {
   margin-left: 300px;
 }
 @media (max-width: 1199px) {
+  #header {
+    display: none;
+  }
   .navbaropen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  transition: all ease-in-out 0.5s;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background: #040b14;
-  overflow-y: auto;
-  
+    display: block !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9999;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #040b14 !important;
+    overflow-y: auto;
   }
   .viewopen {
     margin-left: 300px;
-  }
-
-  #header {
-    left: -100%;
   }
   #main {
     margin-left: 0;
@@ -290,7 +287,4 @@ export default {
 .mobile-nav-active #header {
   left: 0;
 }
-
-
-
 </style>

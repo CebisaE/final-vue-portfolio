@@ -38,14 +38,21 @@ export default {
   left: 0;
   right: 0;
   z-index: 1;
+  height: 100vh;
+width: 110em;
+}
+.hero-container{
+align-self: center;
+
 }
 #hero .hero-container {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  
 }
 #hero h1 {
-  margin: 0 0 10px 0;
+  /* margin: 0 0 10px 0; */
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -65,7 +72,7 @@ export default {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 }
 * {
