@@ -31,7 +31,7 @@ export default {
   z-index: 1;
 }
 .hero-container{
-align-items: center !important;
+justify-content: center !important;
 
 }
 #hero .hero-container {
@@ -44,11 +44,11 @@ align-items: center !important;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #212431;
+  color: #fff;
   padding-bottom: 9px;
 }
 #hero p {
-  color: #212431;
+  color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
