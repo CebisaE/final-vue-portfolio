@@ -1,16 +1,11 @@
 <template>
-<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Emihle Cebisa</h1>
-      <h2>
-  <span>Aspiring</span>
-  <div class="message">
-    <div class="word1">UI/UX</div>
-    <div class="word3">Web Dev</div>
-  </div>
-</h2>
+      <p>I'm <span class="typed" data-typed-items="Web Developer, Freelancer, UI/UX Designer"></span></p>
     </div>
-  </section>
+  </section><!-- End Hero -->
 </template>
 
 <script>
@@ -52,7 +47,18 @@ align-self: center;
   color: #fff;
   padding-bottom: 9px;
 }
-
+#hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -75,7 +81,7 @@ align-self: center;
 }
 
 
-body {
+/* body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,22 +105,9 @@ h2 span {
   font-size: 40px;
   font-weight: 900;
   margin-left: -185px;
-}
+} */
 
-.message {
-  color: #fff;
-  display: block;
-  font-weight: 900;
-  position: absolute;
-  padding-left: 1.4rem;
-  top: 0.rem;
-  left: 270px;
-  animation: openclose 8s ease-in-out infinite;
-}
 
-.word1,.word3 {
-  font-family: tahoma;
-}
 
 @keyframes openclose {
   0% {
