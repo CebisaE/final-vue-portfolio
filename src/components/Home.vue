@@ -3,7 +3,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Emihle Cebisa</h1>
-      <p>I'm <span class="typed" data-typed-items="Web Developer, Freelancer, UI/UX Designer"></span></p>
+      <p>WEB DEVELOPER / UI/UX DESIGNER</p>
     </div>
   </section><!-- End Hero -->
 </template>
@@ -46,19 +46,16 @@ align-self: center;
   line-height: 56px;
   color: #fff;
   padding-bottom: 9px;
+  text-align: center !important;
 }
 #hero p {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
+  text-align: center !important;
 }
-#hero p span {
-  color: #fff;
-  padding-bottom: 4px;
-  letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
-}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
