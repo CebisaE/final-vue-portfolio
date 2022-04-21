@@ -2,7 +2,7 @@
 <footer id="footer">
     <div class="container">
       <div class="copyright">
-        2021 &copy; Copyright <strong><span>Emihle Cebisa</span></strong>
+        2022 &copy; Copyright <strong><span>Emihle Cebisa</span></strong>
       </div>
     </div>
   </footer>

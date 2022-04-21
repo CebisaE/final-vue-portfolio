@@ -55,12 +55,7 @@ export default {
 <style>
 #header {
   position: fixed;
-  /*top: 0;*/
-  /*left: 0;*/
-  /*bottom: 0;*/
   width: 300px;
- /* transition: all ease-in-out 0.5s;*/
- /* z-index: 9997;*/
   transition: all 0.5s;
   padding: 0 15px;
   height:100%;

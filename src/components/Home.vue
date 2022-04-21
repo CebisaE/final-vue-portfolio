@@ -17,9 +17,9 @@ export default {
 </script>
 <style scoped>
 #hero {
-  width: 100%;
+  width: 183vh;
   height: 100vh;
-  background: url("https://i.postimg.cc/90rgvx21/photo-1498050108023-c5249f4df085.jpg") top center;
+  background: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") top center;
   background-size: cover;
 }
 #hero:before {
@@ -41,26 +41,27 @@ justify-content: center !important;
   
 }
 #hero h1 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
+  font-size: 20vh;
+  font-weight: 600;
   color: #fff;
   padding-bottom: 9px;
 }
 #hero p {
+  padding-top:30px;
   color: #fff;
   margin-bottom: 50px;
-  font-size: 26px;
+  font-weight: 600;
+  font-size: 5vh;
   font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 50px;
     line-height: 36px;
     padding: 5px;
   }
-  #hero h2 {
+  #hero p {
     font-size: 18px;
     line-height: 24px;
     padding: 5px;
@@ -69,35 +70,6 @@ justify-content: center !important;
 * {
   box-sizing: border-box;
 }
-
-
-/* body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-}
-h2 {
-  color: #fff;
-  font-family: tahoma;
-  font-size: 3rem;
-  font-weight: 100;
-  line-height: 1.5;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  width: 550px;
-}
-
-h2 span {
-  font-size: 40px;
-  font-weight: 900;
-  margin-left: -185px;
-} */
-
-
 
 @keyframes openclose {
   0% {
