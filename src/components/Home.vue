@@ -1,23 +1,16 @@
 <template>
- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Emihle Cebisa</h1>
-      <h2>
-  <span>Aspiring</span>
-  <div class="message">
-    <div class="word1">UI/UX</div>
-    <div class="word3">Web Dev</div>
-  </div>
-</h2>
+      <p>WEB DEVELOPER / UI/UX DESIGNER</p>
     </div>
-  </section>
+  </section><!-- End Hero -->
 </template>
 
 <script>
 export default {
   name: "Home",
-  components: {
-  },
   
 } 
 
@@ -30,19 +23,15 @@ export default {
   background-size: cover;
 }
 #hero:before {
-  content: "";
-  background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-  height: 100vh;
-width: 110em;
 }
 .hero-container{
-align-self: center;
+justify-content: center !important;
 
 }
 #hero .hero-container {
@@ -56,17 +45,25 @@ align-self: center;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  padding-bottom: 9px;
+}
+#hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    padding: 5px;
   }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    /* margin-bottom: 30px; */
+    padding: 5px;
   }
 }
 * {
@@ -74,7 +71,7 @@ align-self: center;
 }
 
 
-body {
+/* body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,23 +95,9 @@ h2 span {
   font-size: 40px;
   font-weight: 900;
   margin-left: -185px;
-}
+} */
 
-.message {
-  color: #fff;
-  display: block;
-  font-weight: 900;
-  /* overflow: hidden; */
-  position: absolute;
-  padding-left: 1.4rem;
-  top: 0.rem;
-  left: 270px;
-  animation: openclose 8s ease-in-out infinite;
-}
 
-.word1,.word3 {
-  font-family: tahoma;
-}
 
 @keyframes openclose {
   0% {
@@ -180,9 +163,4 @@ h2 span {
     text-indent: 0;
   }
 }
-
-
-
-
-
 </style>

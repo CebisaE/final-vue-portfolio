@@ -1,12 +1,12 @@
 <template>
   <Navbar :opened="opened" :toggleMenu='toggleMenu'/>
   <Home  :class="{viewopen: opened}"/>
-  <About :class="{viewopen: opened}"/>
-  <Resume :class="{viewopen: opened}"/>
-  <Projects :class="{viewopen: opened}"/>
-  <Testimonials :class="{viewopen: opened}"/>
-  <Contact :class="{viewopen: opened}"/>
-  <Footer :class="{viewopen: opened}"/>
+  <About/>
+  <Resume />
+  <Projects />
+  <Testimonials />
+  <Contact/>
+  <Footer />
 
 </template>
 
@@ -31,7 +31,7 @@ Navbar,
     Contact,
     Footer
   },
-   data(){
+  data(){
     return {
       opened: false
     }
@@ -54,6 +54,7 @@ section {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: white;
+  overflow-y: hidden;
 }
 body {
   font-family: "Open Sans", sans-serif;
