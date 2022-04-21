@@ -52,18 +52,12 @@ align-self: center;
   
 }
 #hero h1 {
-  /* margin: 0 0 10px 0; */
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;

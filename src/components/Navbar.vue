@@ -157,6 +157,7 @@ export default {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
+  height:100%;
   background: #040b14;
   overflow-y: auto;
 }
