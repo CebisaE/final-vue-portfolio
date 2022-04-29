@@ -3,7 +3,7 @@
 
         <div class="section-title">
           <h2>Projects</h2>
-          <p>Projects i've done since i joined Lifechoices</p>
+          <p>Projects I've done since I joined Lifechoices</p>
         </div>
 
 <div class="container my-5">
