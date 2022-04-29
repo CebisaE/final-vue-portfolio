@@ -13,7 +13,7 @@
     </div>
     <div class="contentBx">
       <h2>{{project.title}}</h2>
-      <a :href='project.github' class="card-link" target="_blank">github</a>
+      <!-- <a :href='project.github' class="card-link" target="_blank">github</a> -->
       <a :href='project.netlify' class="card-link" target="_blank">netlify</a>
     </div>
   </div>
